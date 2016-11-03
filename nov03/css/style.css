@@ -1,0 +1,44 @@
+body {
+  background-color: white;
+  margin: 0;
+  font-size: 18px;
+}
+nav {
+  background-color: red;
+  padding: 0 15px 0 10px;
+}
+nav li {
+  display:inline;
+}
+nav a {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 10px;
+  /*font-size: 300%;*/
+  color: blue;
+  text-decoration: none;
+  border: 1px solid yellow;
+  background-image: linear-gradient(to top, red, pink, orange, blue);
+  transform: rotate(180deg);
+  transform-origin: 50% 51px;
+  animation-name: circle;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+
+nav a::before {
+  content: ':';
+}
+nav a::after {
+  content: ':';
+}
