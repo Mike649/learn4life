@@ -1,0 +1,42 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-image: url(https://fistchatben.files.wordpress.com/2012/02/space.jpg);
+  background-repeat: no-repeat;
+}
+
+header {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  border:20px solid transparent;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  text-align: center;
+}
+
+button {
+  width: 150px;
+  margin: 0 auto;
+  padding: 8px;
+  border: 2px solid clear;
+  border-radius: 0px;
+  text-align: center;
+}
