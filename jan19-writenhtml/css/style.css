@@ -31,11 +31,11 @@ div {
   width: 500px;
   margin:0 auto;
   padding: 20px;
-  border: 1px solid lightgray;
+  border: 1px solid red;
   border-radius: 10px;
   text-align: center;
   transition: box-shadow 200ms ease-out;
 }
 div:hover {
-  box-shadow: 0 15px 20px 5px hsla(0, 0%, 0%, .5);
+  box-shadow: 0 15px 20px 5px hsla(0, 2%, 3%, .5);
 }

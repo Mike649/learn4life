@@ -1,0 +1,136 @@
+body{
+
+}
+
+img:hover {
+  transform: rotate(980deg);
+}
+img {
+  transition: transform 10000ms ease-out;
+  height: 300px;
+  width: 300px;
+transform: rotate(980deg);
+animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate{
+  0% {transform: rotate(720deg) scale(1);
+  opacity: 1;
+  }
+  0% {transform: rotate(0deg) scale(11);
+    opacity: 1;
+  }
+
+  90% {transform: rotate(0deg) scale(1);
+    opacity: 0;
+  }
+
+  100% {transform: rotate(720deg) scale(1);
+    opacity: 1;
+  }
+}
+
+
+h1{
+  color: lime;
+}
+
+p{
+  color: lime;
+}
+
+.image-frame {
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: none
+}
+
+.image-frame:hover {
+  box-shadow: none;
+}
+
+div {
+  width: 500px;
+  margin:0 auto;
+  padding: 20px;
+  border: 1px hsl(271, 58%, 33%);
+  border-radius: 10px;
+  text-align: center;
+  background-color: black;
+  transition: box-shadow 200ms ease-out;
+}
+div:hover {
+  box-shadow: 0 15px 20px 5px hsl(271, 58%, 33%);
+}
+
+
+
+button {
+    left: 20%;
+    margin: 0px;
+    top: 20%;
+}
+button:hover,
+button:active {
+    outline: 0;
+}
+
+button.depth {
+    background: #444;
+    border: none;
+    border-radius: 80px;
+    box-shadow: inset 0 0 2px 2px hsla(0,0%,0%,.2),
+                inset 0 0 2px 4px hsla(0,0%,0%,.2),
+                inset 0 0 2px 6px hsla(0,0%,0%,.2),
+                inset 0 0 1px 8px hsla(0,0%,0%,.5),
+                inset 0 -4px 2px 4px hsla(0,0%,0%,.5),
+                inset 0 1px 1px 8px hsla(0,0%,100%,.25),
+                inset 0 -30px 30px hsla(0,0%,0%,.2),
+                0 -4px 8px 4px hsla(0,0%,0%,.5),
+                0 10px 10px hsla(0,0%,0%,.25),
+                0 0 2px 2px hsla(0,0%,0%,.2),
+                0 0 2px 4px hsla(0,0%,0%,.2),
+                0 0 2px 6px hsla(0,0%,0%,.2),
+                0 0 2px 8px hsla(0,0%,0%,.5),
+                0 1px 2px 8px hsla(0,0%,100%,.25),
+                0 -1px 2px 8px hsla(0,0%,0%,.5);
+    color: #303030;
+    cursor: pointer;
+    font: bold 20px/15px sans-serif;
+    height: 80px;
+    padding: 0;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.25),
+                 0 -1px 1px hsla(0,0%,0%,.75);
+    width: 80px;
+}
+button.depth:hover,
+button.depth:focus {
+    color: lime;
+    text-shadow: 0 0 20px hsla(240,75%,75%,.5),
+                 0 1px 1px hsla(0,0%,100%,.25),
+                 0 -1px 1px hsla(0,0%,0%,.75);
+}
+button.depth:active {
+    box-shadow: inset 0 0 2px 2px hsla(0,0%,0%,.2),
+                inset 0 0 2px 4px hsla(0,0%,0%,.2),
+                inset 0 0 2px 6px hsla(0,0%,0%,.2),
+                inset 0 0 1px 7px hsla(0,0%,0%,.5),
+                inset 0 5px 15px 7px hsla(0,0%,0%,.15),
+                inset 0 -4px 2px 3px hsla(0,0%,0%,.5),
+                inset 0 1px 1px 7px hsla(0,0%,100%,.25),
+                inset 0 -30px 30px hsla(0,0%,0%,.1),
+                inset 0 30px 30px hsla(0,0%,0%,.2),
+                0 -4px 8px 4px hsla(0,0%,0%,.5),
+                0 5px 10px hsla(0,0%,0%,.25),
+                0 0 2px 2px hsla(0,0%,0%,.2),
+                0 0 2px 4px hsla(0,0%,0%,.2),
+                0 0 2px 6px hsla(0,0%,0%,.2),
+                0 0 2px 8px hsla(0,0%,0%,.5),
+                0 1px 2px 8px hsla(0,0%,100%,.25),
+                0 -1px 2px 8px hsla(0,0%,0%,.5);
+    line-height: 86px;
+}
