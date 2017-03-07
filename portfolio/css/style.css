@@ -2,22 +2,21 @@ body{
 
 }
 
-img:hover {
+.image-frame img:hover {
   transform: rotate(980deg);
 }
-img {
+.image-frame img {
   transition: transform 10000ms ease-out;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
 transform: rotate(980deg);
-animation: rotate 2s linear infinite;
+animation: rotate 1s linear infinite;
 }
-
 @keyframes rotate{
   0% {transform: rotate(720deg) scale(1);
   opacity: 1;
   }
-  0% {transform: rotate(0deg) scale(11);
+  0% {transform: rotate(0deg) scale(1);
     opacity: 1;
   }
 
@@ -26,7 +25,7 @@ animation: rotate 2s linear infinite;
   }
 
   100% {transform: rotate(720deg) scale(1);
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -35,36 +34,51 @@ h1{
   color: lime;
 }
 
+h2{
+  font-size: small;
+  color: lime;
+}
+
+h3{
+  color: lime;
+  font-size: small;
+}
+
+nav{
+  color: lime;
+}
+
 p{
   color: lime;
 }
 
 .image-frame {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border: 5px solid black;
-  border-radius: 50%;
+  border-radius: 0;
   overflow: hidden;
   padding: 0;
   box-shadow: none
 }
 
 .image-frame:hover {
-  box-shadow: none;
+  box-shadow: 0 10px 20px 4px lime;
 }
 
 div {
   width: 500px;
   margin:0 auto;
-  padding: 20px;
-  border: 1px hsl(271, 58%, 33%);
-  border-radius: 10px;
+  padding: 30px;
+  border: 1px hsl(271, 100%, 50%);
+  border-radius: 0;
   text-align: center;
-  background-color: black;
+  /*background-color: black;*/
+  background-image: url(../img/galaxy.jpg);
   transition: box-shadow 200ms ease-out;
 }
 div:hover {
-  box-shadow: 0 15px 20px 5px hsl(271, 58%, 33%);
+  box-shadow: 0 15px 20px 5px lime;
 }
 
 
@@ -100,7 +114,7 @@ button.depth {
                 0 -1px 2px 8px hsla(0,0%,0%,.5);
     color: #303030;
     cursor: pointer;
-    font: bold 20px/15px sans-serif;
+    font: bold 15px/15px sans-serif;
     height: 80px;
     padding: 0;
     text-shadow: 0 1px 1px hsla(0,0%,100%,.25),
